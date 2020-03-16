@@ -1,0 +1,6 @@
+require 'watir-webdriver'
+
+Selenium::WebDriver::Chrome::Service.executable_path="C:\\Users\\go20075205\\Downloads\\chromedriver_win32\\chromedriver.exe"
+$driver = Watir:: Browser.new :chrome
+$driver.driver.manage.timeouts.implicit_wait = 5
+
